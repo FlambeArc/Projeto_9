@@ -79,11 +79,104 @@ li.selected > span{
 div.telefone-header{
     float: left;
     position: relative;
-    top: -7px;
+    top: -3px;
 }
 
 div.telefone-header span{
-    font-size: 25px;
+    font-size: 22px;
     color: white;
     padding-left: 30px;
+}
+
+.content{
+    padding: 60px 0;
+}
+
+.content .one{
+    float: left;
+    width: 50%;
+}
+
+.content .one h2{
+    color: #509d87;
+    font-weight: normal;
+    font-size: 37px;
+}
+
+.content .one p,
+.content .one span{
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.content .one form input{
+    display: inline-block;
+}
+
+.content .one form input[type=email]{
+    width: 251px;
+    height: 50px;
+    border: 3px solid #ccc;
+    border-radius: 80px;
+    padding-left: 15px;
+    margin: 10px 0;
+}
+
+.content .one form input[type=email]:focus{
+    outline: 0;
+}
+
+.content .one form input[type=submit]{
+    background-color: #00daaa;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 80px;
+    font-size: 14px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.content .one span{
+    color: #509d87;
+    font-size: 13px;
+    margin-top: 20px;
+    display: block;
+}
+
+.content .two{
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.content .two > img{
+    border-radius: 50%;
+    width: 50%;
+    float: left;
+    border: 15px solid rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 900px){
+    .content .two > img{
+        display: none;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    .content .one{
+        text-align: center;
+        width: 100%;
+    }
+
+    .telefone-header{
+        display: none;
+    }
+
+    section.header-master{
+        min-height: 400px;
+    }
 }
