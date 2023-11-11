@@ -227,6 +227,24 @@ section.diferenciais > .container{
     padding: 10px 50px;
 }
 
+section.depoimento{
+    padding-top: 200px;
+    padding-bottom: 300px;
+    background-image: url('../Imagens/background3.jpg');
+    background-size: cover;
+    color: #2d2d2d;
+    text-align: center;
+}
+
+section.depoimento h2{
+    font-size: 29px;
+    font-weight: normal;
+}
+
+section.depoimento p{
+    font-size: 15px;
+}
+
 @media screen and (max-width: 900px){
     .content .two > img{
         display: none;
